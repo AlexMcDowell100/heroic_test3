@@ -5,6 +5,9 @@
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
+
+
+
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
@@ -13,6 +16,13 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "ginlovers";
+  @import "posts";
+
+
+
+
 a{
     text-decoration-line: none;
     color: white;
@@ -41,7 +51,7 @@ grid-template-rows:1fr;
   width:100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
-  
+
 }
 
 .modal-content{
@@ -104,7 +114,7 @@ grid-template-rows:1fr;
     color: #ccc;
     float: right;
     font-size: 30px;
-    
+
     background-size: 90%;
     margin-right: 16px;
 }
@@ -126,10 +136,10 @@ grid-template-rows:1fr;
   text-decoration: none;
   cursor:pointer;
 }
-    
-    
+
+
 #acceptBtn{
-   
+
     display: block;
     align-content: center;
     margin: auto;
@@ -141,8 +151,8 @@ grid-template-rows:1fr;
     margin-top: 45px;
     margin-bottom: 15px;
 
-    
-    
+
+
 }
 #cookieMonster {
     float: left;
@@ -151,12 +161,12 @@ grid-template-rows:1fr;
     width: 400px;
     padding-bottom: 20px;
     padding-top: 30px;
- 
+
 }
 
 #script_size{
-font-size:90px;    
-    
+font-size:90px;
+
 }
 
 @keyframes modalopen{
@@ -165,7 +175,7 @@ font-size:90px;
 }
 
 p div .modal-body{
-        
+
 }
 
 .modal-body span{
@@ -177,56 +187,91 @@ p div .modal-body{
     .modal-content{
             width: 260px;
     }
-    
+
     #cookieMonster{
         padding-top:10px;
           width: 200px;
             padding-bottom: 10px;
     }
-    
+
     .closeBtn {
         width:20px;}
     #boldfont {
         font-size:40px;
     }
-    
+
     #script_size {
     font-size: 60px;
 }
-    
+
     .modal-body {
     padding: 10px 5px;
 }
-    
+
     #acceptBtn{
           margin-top:10px;
         margin:auto;
 }
     .modal-body{
-      
+
         padding-bottom:0;
-        
-        
+
+
     }
-    
+
     div#acceptBtn.btn.dark{
         margin-top: 30px;
     }
-    
-    
+
+
     .modal-body p{
-       
+
     margin-bottom:0;
     }
-    
+
     .modal-content{
         margin:5% auto;
     }
-        
+
 }
 
 
 
 body{
   background-color: black;
+}
+
+
+
+.new_menu{
+position:fixed;
+background-color:white;
+color: black;
+left:0;
+top:0;
+width:100vw;
+height:100vh;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+-o-transition: 0.5s ease-in;
+transition: 0.5s ease-in;
+-webkit-transform: translate3d(-100%,0,0);
+-moz-transform: translate3d(-100%,0,0);
+-o-transform: translate3d(-100%,0,0);
+-ms-transform: translate3d(-100%,0,0);
+transform: translate3d(-100%,0,0);
+}
+
+
+.new_menu-active{
+   -webkit-transform: translate3d(0,0,0);
+   -moz-transform: translate3d(0,0,0);
+   -o-transform: translate3d(0,0,0);
+   -ms-transform: translate3d(0,0,0);
+   transform: translate3d(0,0,0);
+ }
+
+#menu_close{
+  margin:5px;
+
 }
