@@ -2,11 +2,11 @@ body {
   font-family: 'Istok Web', sans-serif;
   font-weight:lighter;
   color:white;
-  background-color: black; 
+  background-color: black;
 }
 
 #welcome{
-  background-color: white; 
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:200px;
@@ -146,17 +146,17 @@ display:none;
   background-color: #000000;
   padding: 20px;
   border: 5px solid white;
-  
+
 
 }
 
 
 /* Safari 4.0 - 8.0 */
 .transform {
-  -webkit-transition: all 2s ease-in-out;  
-  -moz-transition: all 2s ease-in-out;  
-  -o-transition: all 2s ease-in-out;  
-  -ms-transition: all 2s ease-in-out;  
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
@@ -175,7 +175,7 @@ opacity:0;
     right: 0;
     opacity:0;
     width:40px;
-    
+
     }
 
 .not-hidden{
@@ -196,49 +196,49 @@ opacity:0;
     0% {
       opacity:0;
     }
-      
+
       100%
       {
         opacity:1;
-        
+
       }
 
     }
-   
-    
+
+
 
 @-moz-keyframes fadeinbutton { /* Firefox */
      0% {
       opacity:0;
     }
-      
+
       100%
       {
         opacity:1;
-       
+
 
       }
-        
+
 }
 @-webkit-keyframes fadeinbutton { /* Safari and Chrome */
       0% {
       width:0;
     }
-      
+
       100%
       {opacity:1;
-        
+
       }
-        
+
 }
 @-o-keyframes fadeinbutton { /* Opera */
      0% {
       width:0;
     }
-      
+
       100%
       {opacity:1;
-        
+
       }
 }
 
@@ -261,8 +261,8 @@ animation-delay: 2s;
     -o-animation: fadein 4s; /* Opera */
     animation-delay: 2s;
     animation-fill-mode: forwards;
-  
-   
+
+
 }
 
 @keyframes fadein {
@@ -280,8 +280,8 @@ animation-delay: 2s;
       }
 
     }
-   
-    
+
+
 
 @-moz-keyframes fadein { /* Firefox */
      0% {
@@ -297,7 +297,7 @@ animation-delay: 2s;
         width:100vw;
 
       }
-        
+
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
       0% {
@@ -311,7 +311,7 @@ animation-delay: 2s;
       {opacity:1;
         width:100vw;
       }
-        
+
 }
 @-o-keyframes fadein { /* Opera */
      0% {
@@ -338,8 +338,3 @@ float:right;
 z-index:12;
 position: fixed;
 }
-
-
-
-
-
